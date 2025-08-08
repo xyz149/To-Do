@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <h1>To-Do List</h1>
+            <div class="id">
+                <label for="task-id">Task ID</label>
+                <input type="text" id="task-id" name="task-id" placeholder="Enter Task ID">
+            </div>
+            <div class="name">
+                <label for="task-name">Task Name</label>
+                <input type="text" id="task-name" name="task-name" placeholder="Enter Task Name">
+            </div>
+            <div class="description">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Enter Task Description" rows="4" cols="50"></textarea>
+            </div>
+            <div class="time">
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time">
+            </div>
+            <div class="date">
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="image">
+                <label for="image-upload">Image</label>
+                <input type="file" name="image" id="image-upload" class="styled-file-input">
+            </div>
+            <div class="buttons">
+                <button>Add</button>
+                <button>Pin</button>
+                <button>Delete</button>
+                <button>Search</button>
+                <button>Clear All</button>
+            </div>
+            <div class="task-stats">
+                <p>Total Tasks : <span id="total-tasks">0</span></p>
+                <p>Completed Tasks : <span id="completed-tasks">0</span></p>
+                <p>Pending Tasks : <span id="pending-tasks">0</span></p>
+                <p>Deleted Tasks : <span id="deleted-tasks">0</span></p>
+            </div>
+            <div class="data">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                            <th>Photo</th>
+                            <th>Operations</th>
+                        </tr>
+                    </thead>
+                    <tbody id="task-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
